@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: timezonetest
+  name: timezonetest
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: timezonetest
+  template:
+    metadata:
+      labels:
+        app: timezonetest
+    spec:
+      containers:
+      - image: linux-timezone:0.1 #原来是 nginx:1.14.2
+        name: timezonetest
+        resources:
+          requests:
+            cpu: 102m
+            memory: 100Mi
+          limits:
+            cpu: 501m
+            memory: 501Mi

@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: timezonetest-env
+  name: timezonetest-env
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: timezonetest-env
+  template:
+    metadata:
+      labels:
+        app: timezonetest-env
+    spec:
+      containers:
+      - image: linux-timezone:0.1 #原来是 nginx:1.14.2
+        name: timezonetest-env
+        resources:
+          requests:
+            cpu: 102m
+            memory: 100Mi
+          limits:
+            cpu: 501m
+            memory: 501Mi
+        env:
+        - name: TZ
+          # value: "Asia/Shanghai"
+          value: "America/New_York"
+      #   volumeMounts:
+      #   - name: localtime-volume
+      #     mountPath: /etc/localtime
+      #     readOnly: true
+      # volumes:
+      # - name: localtime-volume
+      #   hostPath:
+      #     path: /etc/localtime
