@@ -1,0 +1,126 @@
+{
+    "files.exclude": {
+      "**/*.meta": true,
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true,
+      "**/__pycache__": true
+    },
+    "eslint.codeAction.showDocumentation": {
+      "enable": true
+    },
+    // Enable per-language
+  
+    // "editor.formatOnSave": true,
+    "[javascript]": {
+      // "editor.defaultFormatter": "vscode.typescript-language-features",
+      "editor.formatOnSave": true,
+      "editor.formatOnPaste": true,
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[vue]": {
+      "editor.defaultFormatter": "Vue.volar"
+    },
+    "[html]": {
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+      "editor.formatOnSave": true,
+      // "editor.formatOnPaste": true,
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+  
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    /*  prettier的配置 */
+    "prettier.printWidth": 120, // 超过最大值换行
+    "prettier.tabWidth": 2, // 缩进字节数
+    "prettier.useTabs": false, // 缩进不使用tab，使用空格
+    "prettier.semi": false, // 句尾不添加分号
+    // "prettier.semi": true, // 句尾添加分号
+    "prettier.singleQuote": true,
+    "workbench.preferredLightColorTheme": "Community Material Theme Lighter",
+    "material-icon-theme.activeIconPack": "vue_vuex",
+    "editor.accessibilityPageSize": 13,
+    "editor.tokenColorCustomizations": {
+      "comments": {
+        // 设置字体样式 加粗 下划线 斜体等
+        "fontStyle": "",
+        // 设置字体颜色
+        "foreground": "#4CAEE2"
+      }, // 注释
+      "keywords": "#0a0", // 关键字
+      "variables": "#f00", // 变量名
+      "strings": "#e2d75dbd", // 字符串
+      "functions": "#5b99fcc9", // 函数名
+      "numbers": "#AE81FF" // 数字
+    },
+    "workbench.colorCustomizations": {
+      "statusBar.background": "#e2d75dbd",
+      "statusBar.noFolderBackground": "#0a0",
+      "statusBar.debuggingBackground": "#0a0"
+    },
+  
+    "go.testFlags": [
+      "-v",
+      "-count=1" // 增加用以禁用测试缓存
+    ],
+  
+    "C_Cpp.vcFormat.indent.caseContents": false,
+    "C_Cpp.vcFormat.indent.lambdaBracesWhenParameter": false,
+    "C_Cpp.vcFormat.indent.namespaceContents": false,
+    "C_Cpp.vcFormat.newLine.beforeCatch": false,
+    "C_Cpp.vcFormat.newLine.beforeElse": false,
+    "C_Cpp.vcFormat.space.afterComma": false,
+    "C_Cpp.vcFormat.space.afterKeywordsInControlFlowStatements": false,
+    "C_Cpp.vcFormat.space.withinInitializerListBraces": false,
+    "C_Cpp.vcFormat.space.removeAroundUnaryOperator": false,
+    "C_Cpp.vcFormat.space.removeBeforeSemicolon": false,
+    "C_Cpp.vcFormat.space.removeAroundMemberOperators": false,
+    "C_Cpp.vcFormat.space.preserveInInitializerList": false,
+    "C_Cpp.vcFormat.space.groupSquareBrackets": false,
+    "C_Cpp.vcFormat.space.beforeInheritanceColon": false,
+    "C_Cpp.vcFormat.space.beforeConstructorColon": false,
+    "C_Cpp.vcFormat.space.beforeBlockOpenBrace": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "go.toolsManagement.autoUpdate": true,
+    "explorer.confirmDelete": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "cmake.configureOnOpen": true,
+  
+    "editor.fontSize": 14,
+    "terminal.integrated.fontSize": 14,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "Lua.telemetry.enable": true,
+  
+    "editor.minimap.maxColumn": 40,
+    "python.linting.enabled": false,
+    "debug.console.fontSize": 14,
+    "mssql.resultsFontSize": 14,
+    "editor.wordWrap": "on",
+    "[nginx]": {
+      "editor.defaultFormatter": "ahmadalli.vscode-nginx-conf"
+    },
+    "liveServer.settings.donotShowInfoMsg": true,
+    // "editor.stickyScroll.enabled": true,
+    "git.openRepositoryInParentFolders": "never",
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "debug.onTaskErrors": "debugAnyway",
+    "editor.renderWhitespace": "all",
+    "terminal.integrated.enablePersistentSessions": false,
+    "workbench.colorTheme": "Monokai Dimmed",
+    "workbench.productIconTheme": "icons-carbon",
+    "window.zoomLevel": -1
+  }
+  

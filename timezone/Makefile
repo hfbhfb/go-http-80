@@ -15,3 +15,10 @@ install:
 	kubectl apply -f dep.yaml
 	-kubectl delete -f dep-env-tz.yaml
 	kubectl apply -f dep-env-tz.yaml
+	-kubectl delete -f  manag-cur.yaml
+	kubectl apply -f  manag-cur.yaml
+
+clean:
+	-kubectl delete -f dep.yaml
+	-kubectl delete -f dep-env-tz.yaml
+	-kubectl delete -f  manag-cur.yaml
